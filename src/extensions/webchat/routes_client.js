@@ -26,10 +26,10 @@ module.exports = function(app) {
 
         config.startupOptions = {
             ...config.startupOptions,
-            port: '{{port}}',
+            port: 443,
             server: '{{hostname}}',
             direct_path: '/',
-            tls: false,
+            tls: true,
             direct: true,
             channel: '',
             bouncer: true,
